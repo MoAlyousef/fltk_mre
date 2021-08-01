@@ -13,4 +13,4 @@ FetchContent_MakeAvailable(FLTK)
 
 add_executable(main main.cpp)
 target_include_directories(main PRIVATE ${fltk_SOURCE_DIR} ${fltk_BINARY_DIR})
-target_link_libraries(main PRIVATE fltk "-framework Cocoa")
+target_link_libraries(main PRIVATE fltk X11)
